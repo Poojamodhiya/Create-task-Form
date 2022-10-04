@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="form_div">
+      <h3>Create task</h3>
+      <form>
+        <input class="input_text" type="text" placeholder="Type" /><br />
+        <div class="row">
+          <div class="input_drop">
+            <select name="company" id="company" value="Company">
+              <option value="" selected disabled hidden>Company</option>
+              <option value="IBM">IBM</option>
+              <option value="TCS">TCS</option>
+              <option value="HCL">HCL</option>
+            </select>
+          </div>
+          <div class="input_drop">
+            <select name="opportunity" id="opportunity" value="opportunity">
+              <option value="" selected disabled hidden>Opportunity</option>
+              <option value="IBM">10 lac</option>
+              <option value="TCS">5 lac</option>
+              <option value="HCL">6 lac</option>
+            </select>
+            <p>optional</p>
+          </div>
+        </div>
+
+        <input class="input_text" type="text" placeholder="Task Name" /><br />
+        <input class="input_text" type="text" placeholder="CC" />
+        <p>optional</p>
+
+        <div class="row">
+          <div class="check">
+            <label>Nature of request</label><br />
+            <input type="checkbox"/> Ads Review<br />
+            <input type="checkbox" /> Keywords Review<br />
+            <input type="checkbox" /> Extensions Review
+          </div>
+          <div class="radio">
+            <label>Current reviewable status</label><br />
+            <input type="radio" name="status" /> Approved<br />
+            <input type="radio" name="status" /> Not approved
+          </div>
+        </div>
+        <input class="btn" type="button" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
